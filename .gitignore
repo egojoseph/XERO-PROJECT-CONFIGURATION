@@ -1,0 +1,86 @@
+
+## Any un needed file any where in the project file structure.
+
+*.class
+
+*.tmp
+
+*.jar
+
+*.html
+
+*.png
+
+*.json
+
+*.csv
+
+*.DS_Store
+
+
+
+# any eclipse project file.
+
+.eclipse
+
+.classpath
+
+
+
+## All the folders underneath site folder
+
+**/site
+
+site/
+
+site/*
+
+
+
+## target folder at the top level of the project structue and paths and contents underneath it
+
+target/
+
+target/*
+
+
+
+## target folder at any level of the project structue
+
+**/target
+
+/target
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/

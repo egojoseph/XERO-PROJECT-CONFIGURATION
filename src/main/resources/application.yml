@@ -1,0 +1,28 @@
+server:
+  port: 8991
+
+spring:
+  kafka:
+    bootstrapServers: http://localhost:9092
+    consumer:
+      group-id: xerointegration
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+  main:
+    allow-bean-definition-overriding: true
+xero:
+  upload:
+    journal: https://api.xero.com/api.xro/2.0/ManualJournals
+  fetch:
+    journal: https://api.xero.com/api.xro/2.0/ManualJournals
+  token-url: https://identity.xero.com/connect/token
+  client-id: 58DF5099FB964BD9A51314D47CF4C89C
+  client-secret: NjsgJjBRnG9SDKzkbB9lR9VMA8y_WSzqAAsCAfOZYMLsPkMV
+  grant-type: client_credentials
+  scope: accounting.transactions
+
+waya:
+  transaction: https://services.staging.wayabank.ng/temporal-service/api/v1/wallet/account/transactions/
+  token: serial eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbeyJjcmVhdGVkQXQiOiIwNy0xMS0yMDIyIDEwOjM4OjI3IiwidXBkYXRlZEF0IjoiMDctMTEtMjAyMiAxMDozODoyNyIsImNyZWF0ZWRCeSI6Ik1HUiIsIm1vZGlmaWVkQnkiOiJNR1IiLCJpZCI6MTAsIm5hbWUiOiJST0xFX1VTRVJfT1dORVIiLCJkZXNjcmlwdGlvbiI6IkNVU1RPTUVSIiwiZGVmYXVsdCI6dHJ1ZSwiYWRtaW5Sb2xlIjpmYWxzZX0seyJjcmVhdGVkQXQiOiIwNy0xMS0yMDIyIDEwOjM4OjI3IiwidXBkYXRlZEF0IjoiMDctMTEtMjAyMiAxMDozODoyNyIsImNyZWF0ZWRCeSI6Ik1HUiIsIm1vZGlmaWVkQnkiOiJNR1IiLCJpZCI6MjIsIm5hbWUiOiJST0xFX0FETUlOX0FQUCIsImRlc2NyaXB0aW9uIjoiU1lTVEVNIEFDQ09VTlQiLCJkZWZhdWx0IjpmYWxzZSwiYWRtaW5Sb2xlIjp0cnVlfV0sImlkIjoyMTUzLCJzdWIiOiJlZGNlZWJlZUBnbWFpbC5jb20iLCJpYXQiOjE2ODE0MTQwMjgsImV4cCI6MTcxMjk3MTYyOH0.jkJn_wCS9G5yDw2yOBkhC4ogW0kPkl2AyZ6CdYX8KOdiqRLRxkV-CBVqMkLXne2kZ9SmXVNke0h6RbbNdxklPQ
+

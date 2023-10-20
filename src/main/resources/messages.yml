@@ -1,0 +1,5 @@
+messages:
+  request:
+    success: Success
+    failure: Failed
+    bad-request: Bad request
